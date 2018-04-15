@@ -1,12 +1,14 @@
 import React from 'react'
 
 export default ({ Server, Router, Root }) => {
-	Router.get.foo = (args) => {
+	Router.get['/'] = (args) => {
 		console.log('in app router', args)
 	}
-	Root(() => {
+	Root(({ data }) => {
 		// console.log('app/index root called')
-		return <div>in an ellement</div>
+		return <div>this is foo: {data.get('foo')} </div>
+	}, {
+		foo: 'bar'
 	})
 	// Root(({ data }) => {
 	// 	console.log('in app!!!')

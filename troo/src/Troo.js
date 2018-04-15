@@ -46,10 +46,14 @@ class Cone {
 		return this._root;
 	}
 
-	this.Root = (callback, initialData) => {
-		console.log('callback1', callback, this._root)
+	this.getIntialData = (asImmutable = false) => {
+		return asImmutable ? new ImmutableStore(this._intialData) :
+						     this._intialData;
+	}
+
+	this.Root = (callback, initialData = {}) => {
 		this._root = callback;
-		console.log('callback2', callback, this._root)
+		this._intialData = initialData;
 	}
 	this.Root = this.Root.bind(this)
 	// this.Root = this.Root.bind(this)

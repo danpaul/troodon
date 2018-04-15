@@ -5,15 +5,20 @@ const troo = new Troo()
 const Actions = troo.Actions
 const Router = troo.Router
 const Routes = troo.Routes
-// const Root = troo.Root.bind(troo)
-// const _root = troo._root.bind(troo)
 const Root = troo.Root
-const _root = troo._root
 const getRoot = troo.getRoot
+const getIntialData = troo.getIntialData
 
-export { Actions, Router, Routes, Root, _root, getRoot }
+export {
+	Actions,
+	Router,
+	Routes,
+	Root,
+	getRoot,
+	getIntialData
+}
 
-// 
+// asdf
 // import Cone from './Cone'
 // const cone = new Cone()
 // const AddAction = cone.AddAction.bind(cone)

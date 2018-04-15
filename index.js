@@ -102,8 +102,10 @@ webpack({
 		troo.Routes.get.forEach(function(r) {
 			const path = r.route[0] === '/' ? r.route : '/' + r.route;
 			server.get(path, (req, res) => {
-				ReactDOMServer.renderToString(root)
-				res.send(ReactDOMServer.renderToString(root()))
+				// ReactDOMServer.renderToString(root)
+// asdf
+console.log('intial data', troo.getIntialData(true))
+				res.send(ReactDOMServer.renderToString(root({ data: troo.getIntialData(true)})))
 			});
 		})
 

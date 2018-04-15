@@ -8,12 +8,12 @@ Framework build:
 * `webpack --watch`
 
 TODO:
-* set up component server side rendering
-	* Pass route singleton into app
-	* definte routes
-	* parse routes, setup express routes
-	* handle route and output something to the browser
-	* set up client side routing
+
+* set intial data
+
+* Confirm actions work on server
+
+* Bundle app and get component hydration working
 
 * hook up router to render something
 * pass root component to client app
@@ -22,3 +22,5 @@ TODO:
 * pass data init function to client app and tie into root init
 * render to string on server and output template use `react-dom/server` and react-server-boilerplate
 * see TODOs in index.js
+
+* Add Head Root
